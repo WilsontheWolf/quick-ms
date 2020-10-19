@@ -1,0 +1,26 @@
+{
+  "name": "better-ms",
+  "version": "1.0.0",
+  "description": "A small conversion utility.",
+  "main": "lib/index.js",
+  "types": "lib",
+  "keywords": [
+    "ms",
+    "better-ms",
+    "time",
+    "conversion",
+    "converter"
+  ],
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "author": "Znudzony <krzysztof.rapior@protonmail.com>",
+  "license": "ISC",
+  "private": false,
+  "publisher": "znudzony",
+  "repository": "Znudzony/better-ms",
+  "devDependencies": {
+    "@types/node": "^14.11.10",
+    "typescript": "^4.0.3"
+  }
+}
