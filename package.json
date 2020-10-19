@@ -18,6 +18,8 @@
   "author": "Znudzony <krzysztof.rapior@protonmail.com>",
   "license": "ISC",
   "private": false,
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "homepage": "https://www.npmjs.com/package/quick-ms",
   "publisher": "znudzony",
   "repository": "Znudzony/quick-ms",
   "devDependencies": {
