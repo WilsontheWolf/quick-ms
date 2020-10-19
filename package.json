@@ -1,5 +1,5 @@
 {
-  "name": "better-ms",
+  "name": "quick-ms",
   "version": "1.0.0",
   "description": "A small conversion utility.",
   "main": "lib/index.js",
@@ -7,6 +7,7 @@
   "keywords": [
     "ms",
     "better-ms",
+    "quick-ms",
     "time",
     "conversion",
     "converter"
@@ -18,7 +19,7 @@
   "license": "ISC",
   "private": false,
   "publisher": "znudzony",
-  "repository": "Znudzony/better-ms",
+  "repository": "Znudzony/quick-ms",
   "devDependencies": {
     "@types/node": "^14.11.10",
     "typescript": "^4.0.3"

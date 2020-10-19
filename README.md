@@ -1,6 +1,6 @@
-# BETTER-MS
+# QUICK-MS
 Basically that's an old, well known ["ms"](https://www.npmjs.com/package/ms) - but in it's advanced form.
-## ⚔️ **better-ms** VS. **ms**
+## ⚔️ **quick-ms** VS. **ms**
 - It is generally slightly faster
 - Always shows back real values *(Classic ms returns rounded big values)*
 - Supports more time formats (text, 24h & 12h types)
@@ -28,7 +28,7 @@ Basically that's an old, well known ["ms"](https://www.npmjs.com/package/ms) - b
 # Examples
 - Getting raw values *(milliseconds)* :
 ```js
-import { getMilliseconds } from 'better-ms';
+import { getMilliseconds } from 'quick-ms';
 
 console.log(getMilliseconds('1 day, 12 minutes'));
 // OUT: 87120000
@@ -49,7 +49,7 @@ console.log(getMilliseconds('09:00 AM'));
 
 - Getting time objects:
 ```js
-import { getMilliseconds, getTimeObject } from 'better-ms';
+import { getMilliseconds, getTimeObject } from 'quick-ms';
 
 console.log(getTimeObject(new Date().getTime()));
 // OUT:  {
@@ -75,7 +75,7 @@ console.log(getTimeObject(getMilliseconds('29hrs')));
 ```
 - Displaying raw time value:
 ```js
-import { getMilliseconds, getReadableTime } from 'better-ms';
+import { getMilliseconds, getReadableTime } from 'quick-ms';
 
 console.log(getReadableTime(60000));
 // OUT: 1 second
