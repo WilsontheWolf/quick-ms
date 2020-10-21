@@ -77,7 +77,7 @@ console.log(getTimeObject(getMilliseconds('29hrs')));
 ```js
 import { getMilliseconds, getReadableTime } from 'quick-ms';
 
-console.log(getReadableTime(60000));
+console.log(getReadableTime(1000));
 // OUT: 1 second
 
 console.log(getReadableTime(new Date().getTime()));
