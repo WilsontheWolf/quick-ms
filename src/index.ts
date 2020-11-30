@@ -127,7 +127,7 @@ function getReadableTime(ms: number, isCompact: boolean = false): string {
         if(t.seconds) reply.push(`${t.seconds} second${t.seconds > 1 ? 's' : ''}`);
     }
 
-    if(reply.length > 0) return reply.join('');
+    if(reply.length > 0) return reply.join(', ');
     else throw new TypeError(`Final value is smaller than 1 second (Exactly: ${t.milliseconds}ms). getReadableTime() function do not count that low values.`);
 }
 
