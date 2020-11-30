@@ -1,11 +1,17 @@
 interface timeObject {
     years: number;
+    months: number;
     weeks: number;
     days: number;
     hours: number;
     minutes: number;
     seconds: number;
     milliseconds: number;
+}
+interface readableOptions {
+    compact?: boolean;
+    showEmpty?: boolean;
+    showMS?: boolean;
 }
 /**
  * Returns a total number of milliseconds.
@@ -28,6 +34,6 @@ declare function getTimeObject(ms: number): timeObject;
  * @returns {string}
  * @access public
  */
-declare function getReadableTime(ms: number, isCompact?: boolean): string;
+declare function getReadableTime(ms: number, options?: readableOptions): string;
 export { getMilliseconds, getTimeObject, getReadableTime };
 //# sourceMappingURL=index.d.ts.map
