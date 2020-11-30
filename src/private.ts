@@ -19,7 +19,8 @@ function read24thFormat(text: string): number {
         j++;
         ms += k;
     }
-    return isFinite(ms) ? ms : 0;
+    if(isFinite(ms)) return ms;
+    else throw new TypeError(`Final value is greater than Number can hold.`);
 }
 
 /**
@@ -53,7 +54,11 @@ function readTextFormat(text: string): number {
     if(!result) throw new TypeError(`Can't convert: "${text}" into milliseconds.`);
     let ms: number = 0;
     for(const element of result) {
-        switch(element[element.length-1]) {
+        switch(element[element.length - 1]) {
+            case 'y': { // Weeks
+                ms += parseInt(element) * 3.154e+10;
+                break;
+            }
             case 'w': { // Weeks
                 ms += parseInt(element) * 6.048e+8;
                 break;
@@ -77,7 +82,9 @@ function readTextFormat(text: string): number {
             default: throw new TypeError(`I do not recognize: "${element}" format.`);
         }
     }
-    return isFinite(ms) ? ms : 0;
+
+    if(isFinite(ms)) return ms;
+    else throw new TypeError(`Final value is greater than Number can hold.`);
 }
 
 export { read12thFormat, read24thFormat, readTextFormat };

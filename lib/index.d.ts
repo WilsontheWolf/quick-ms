@@ -22,7 +22,7 @@ declare function getMilliseconds(timeFormat: string): number;
  */
 declare function getTimeObject(ms: number): timeObject;
 /**
- * Return raw time value as a human readable string.
+ * Return raw time value as a human readable string. (it skips ms)
  * @param {number} [ms]
  * @param {boolean} [isCompact]
  * @returns {string}
