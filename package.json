@@ -19,7 +19,7 @@
   "license": "ISC",
   "private": false,
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://registry.npmjs.org/"
   },
   "homepage": "https://www.npmjs.com/package/quick-ms",
   "publisher": "znudzony",
